@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Monologue - Private Journaling App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #4A4A8A;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      background-color: #2B2B57;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 10px 25px;
+      font-size: 1.1em;
+      border: none;
+      cursor: pointer;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .btn-signup {
+      background-color: #FF6F61;
+      color: white;
+    }
+    .btn-login {
+      background-color: #FFFFFF;
+      color: #4A4A8A;
+      border: 2px solid #4A4A8A;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    footer {
+      background-color: #4A4A8A;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: url('/static/background.jpeg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  }
+  .hero h2, .hero p, .btn {
+    position: relative;
+    z-index: 1;
+  }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Monologue</h1>
+  <p>Your Private Journaling Space</p>
+</header>
+
+<section class="hero">
+  <h2>Capture your thoughts. Privately.</h2>
+  <p>Sign up or log in to securely access your personal writings.</p>
+  <div>
+    <button class="btn btn-signup">Sign Up</button>
+    <button class="btn btn-login">Log In</button>
+  </div>
+</section>
+
+<footer>
+  <p>Monologue &copy; 2024 | Privacy Policy | Terms of Service</p>
+</footer>
+
+</body>
+</html>
