@@ -1,6 +1,5 @@
-flask
-click
-jinja2
-itsdangerous
-markupsafe
-werkzeug
+# /requirements
+
+flask==3.0.0
+
+# other required dependencies
